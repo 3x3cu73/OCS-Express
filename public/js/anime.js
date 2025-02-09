@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         username=document.getElementById("username").value;
         pass_hash=document.getElementById("password").value;
-
         //Deleting existing data from table
         table = document.getElementById("dataTable").
         getElementsByTagName('tbody')[0];
