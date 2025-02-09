@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             }
 
-            // else{
-            //     document.getElementById("error").innerHTML =error;
-            //     document.getElementById("success").innerHTML ="";
-            // }
+            else{
+                document.getElementById("error").innerHTML =error;
+                document.getElementById("success").innerHTML ="";
+            }
 
         }
 
