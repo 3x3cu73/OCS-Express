@@ -9,6 +9,7 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-green-500: oklch(0.723 0.219 149.579);
     --color-sky-500: oklch(0.685 0.169 237.323);
+    --color-sky-800: oklch(0.443 0.11 240.79);
     --color-blue-400: oklch(0.707 0.165 254.624);
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-gray-600: oklch(0.446 0.03 256.802);
@@ -1676,6 +1677,9 @@
   .outline-1 {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .outline-sky-800 {
+    outline-color: var(--color-sky-800);
   }
   .blur {
     --tw-blur: blur(8px);
