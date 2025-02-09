@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     openModal.addEventListener("click", async () => {
 
         username=document.getElementById("username").value;
-        if( username.length <= 1 ){
+        if( username.length <1 ){
             return
         }
         pass_hash=document.getElementById("password").value;
