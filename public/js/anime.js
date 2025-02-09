@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if( username.length <1 ){
             return
         }
+        else if (username==="."){
+            document.getElementById("username").value="Enter Valid Username";
+            return;
+        }
         pass_hash=document.getElementById("password").value;
         //Deleting existing data from table
         table = document.getElementById("dataTable").
