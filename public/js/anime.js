@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     openModal.addEventListener("click", async () => {
 
         username=document.getElementById("username").value;
+        if( username.value.trim() === "" ){
+            return
+        }
         pass_hash=document.getElementById("password").value;
         //Deleting existing data from table
         table = document.getElementById("dataTable").
