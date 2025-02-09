@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try{
             response = await login(username, md5(pass_hash));
 
-            // console.log(response["data"],username,pass_hash);
+            console.log(response["data"],username,pass_hash);
 
             //Is Credentials are correct
             if (!response["error"]) {
