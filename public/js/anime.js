@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         catch (error) {
             console.log("error", error);
-            document.getElementById("error").innerHTML ="Wrong username or password";
+            document.getElementById("error").innerHTML ="Network Error";
             document.getElementById("success").innerHTML ="";
         }
 
