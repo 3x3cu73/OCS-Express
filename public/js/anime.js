@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             else{
-                document.getElementById("error").innerHTML =error;
+                document.getElementById("error").innerHTML ="Wrong Credentials";
                 document.getElementById("success").innerHTML ="";
             }
 
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         catch (error) {
             console.log("error", error);
-            document.getElementById("error").innerHTML =error;
+            document.getElementById("error").innerHTML ="Network Error";
             document.getElementById("success").innerHTML ="";
         }
 
