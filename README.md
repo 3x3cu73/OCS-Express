@@ -1,5 +1,6 @@
 # OCS Login Page
 Hosted at vercel : https://sumitsaw.tech  
+Databse : SupaBase
 Devloped in Node JS Express  
 Tailwind CSS Has been used . 
 # Login Page
