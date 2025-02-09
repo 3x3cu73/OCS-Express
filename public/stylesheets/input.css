@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animate-popUp {
+    animation: popUp 0.3s ease-out forwards;
+}
+
+/* Animation for closing the modal (Pop Down) */
+@keyframes popDown {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+.animate-popDown {
+    animation: popDown 0.3s ease-out forwards;
+}

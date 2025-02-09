@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/js/anime.js"></script>
+    <script src="/js/md5.js"></script>
+  </head>
+  <body>
+
+  <div class='mx-auto  flex max-w-sm  items-center gap-x-4 rounded-xl p-6 shadow-lg my-10 outline-1'>
+
+    <form class="" onsubmit="return false;">
+      <div class="flex items-center justify-between w-full mx-2 font-bold "><h1>OCS Login</h1></div>
+      <br>
+      <div class="p-2"><span class="rounded-sm  ">Username</span><br>
+        <input id="username" type="text"  class="my-2  focus:outline-none  text-gray-600 " placeholder="Enter Username">
+      </div>
+      
+      <div class="p-2"><span  class="rounded-sm   ">Password</span>
+        <br>
+        <input id="password" type="password" class="my-2 focus:outline-none text-gray-600 " placeholder="Enter Password">
+      </div>
+
+      <div class=" mx-3 ">
+        <button id="openModal" class="text-sky-500 hover:bg-blue-400 hover:text-white font-bold p-1 mt-3 rounded">Login</button>
+      </div>
+    </form>
+    <br>
+
+  </div>
+  <!-- Modal Backdrop -->
+  <div
+          id="modalBackdrop"
+          class="fixed inset-0 bg-gray-200 bg-opacity-30   hidden flex items-center justify-center"
+  >
+    <!-- Modal Content -->
+    <div
+            id="modal"
+            class="bg-white rounded-lg shadow-lg max-w-xl w-full p-6 relative"
+    >
+      <h2 class="text-xl font-bold mb-4">User Details</h2>
+      <hr>
+      <br>
+      <span id="success" class="text-center text-green-500"></span>
+      <span id="error" class="text-center text-red-500 mx-5"></span>
+      <br><br>
+
+
+      <button
+              id="closeModal"
+              class="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-5xl"
+      >
+        &times;
+      </button>
+      <table class="table-auto w-full" id="dataTable">
+        <thead>
+        <th>User</th>
+        <th>Role</th>
+        <th>hash</th>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+      </table>
+
+
+      <!-- Close Modal Button -->
+
+    </div>
+  </div>
+
+
+  </body>
+</html>
